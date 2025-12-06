@@ -5,7 +5,7 @@ pragma solidity ^0.8.20;
 
 /**
  * SovereignIntegrityContract
- * Author: Holly Elizabeth Magas / Esoteric3
+ * Author: Holly Elizabeth Magas / Esotericaddict the Sovereign 
  * Purpose: Immutable declaration of identity sovereignty and asset authorship.
  */
 
