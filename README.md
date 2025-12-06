@@ -1,2 +1,26 @@
 # Sovereign-contract-
 Primary sovereign integrity contract 
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+/**
+ * SovereignIntegrityContract
+ * Author: Holly Elizabeth Magas / Esoteric3
+ * Purpose: Immutable declaration of identity sovereignty and asset authorship.
+ */
+
+contract SovereignIntegrityContract {
+
+    address public sovereign;
+    string public declaration;
+
+    constructor(string memory _declaration) {
+        sovereign = msg.sender;
+        declaration = _declaration;
+    }
+
+    function updateDeclaration(string memory _newDeclaration) external {
+        require(msg.sender == sovereign, "Only the sovereign may update.");
+        declaration = _newDeclaration;
+    }
+}
